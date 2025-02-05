@@ -23,7 +23,6 @@ izumi({
 
         await client.sendMessage(message.jid, {
             video: { url: dl },
-            caption: "Here is your video",
             mimetype: "video/mp4",
         }, { quoted: message.data });
     } catch (error) {
